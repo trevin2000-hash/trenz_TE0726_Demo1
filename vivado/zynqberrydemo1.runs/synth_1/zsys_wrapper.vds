@@ -1,0 +1,938 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun 15 11:00:26 2024
+# Process ID: 3088
+# Current directory: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1
+# Command line: vivado.exe -log zsys_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_wrapper.tcl
+# Log file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/zsys_wrapper.vds
+# Journal file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source zsys_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2020.2/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.cache/ip 
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1179.574 ; gain = 0.000
+Command: synth_design -top zsys_wrapper -part xc7z010clg225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10092
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1227.254 ; gain = 47.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'zsys_wrapper' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:55]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_0' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:203]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_1' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:210]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_10' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:217]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_11' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:224]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_12' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:231]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_13' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:238]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_14' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:245]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_15' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:252]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_16' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:259]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_17' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:266]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_18' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:273]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_19' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:280]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_2' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:287]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_20' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:294]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_21' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:301]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_22' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:308]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_23' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:315]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_3' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:322]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_4' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:329]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_5' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:336]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_6' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:343]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_7' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:350]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_8' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:357]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'E:/Vivado_2020.2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'GPIO_1_tri_iobuf_9' of component 'IOBUF' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:364]
+INFO: [Synth 8-3491] module 'zsys' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7546' bound to instance 'zsys_i' of component 'zsys' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'zsys' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7593]
+INFO: [Synth 8-638] synthesizing module 'audio_imp_1P9NOCO' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:5325]
+INFO: [Synth 8-3491] module 'zsys_audio_formatter_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_audio_formatter_0_0_stub.vhdl:5' bound to instance 'audio_formatter_0' of component 'zsys_audio_formatter_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:5787]
+INFO: [Synth 8-638] synthesizing module 'zsys_audio_formatter_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_audio_formatter_0_0_stub.vhdl:76]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_interconnect_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2673]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_9N11DZ' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:567]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_9N11DZ' (2#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:567]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1H6SM5T' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1H6SM5T' (3#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:663]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1IC1JHM' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:855]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1IC1JHM' (4#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:855]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RADEGI' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1821]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RADEGI' (5#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1821]
+INFO: [Synth 8-3491] module 'zsys_xbar_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'zsys_xbar_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:3089]
+INFO: [Synth 8-638] synthesizing module 'zsys_xbar_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axi_interconnect_0_0' (6#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2673]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_interconnect_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:3418]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1L50WPY' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:196]
+INFO: [Synth 8-3491] module 'zsys_auto_pc_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'zsys_auto_pc_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:439]
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_pc_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_0_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1L50WPY' (7#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:196]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_34S7TF' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1922]
+INFO: [Synth 8-3491] module 'zsys_auto_us_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'zsys_auto_us_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2023]
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_us_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_us_0_stub.vhdl:45]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_34S7TF' (8#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1922]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_15P0L45' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2424]
+INFO: [Synth 8-3491] module 'zsys_auto_us_1' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'zsys_auto_us_1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2543]
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_us_1' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_us_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_15P0L45' (9#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2424]
+INFO: [Synth 8-3491] module 'zsys_xbar_1' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'zsys_xbar_1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:3883]
+INFO: [Synth 8-638] synthesizing module 'zsys_xbar_1' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xbar_1_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axi_interconnect_1_0' (10#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:3418]
+INFO: [Synth 8-3491] module 'zsys_axis_to_i2s_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_to_i2s_0_0_stub.vhdl:5' bound to instance 'axis_to_i2s_0' of component 'zsys_axis_to_i2s_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6014]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_to_i2s_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_to_i2s_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'zsys_clk_divider_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_divider_0_0_stub.vhdl:5' bound to instance 'clk_divider_0' of component 'zsys_clk_divider_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6025]
+INFO: [Synth 8-638] synthesizing module 'zsys_clk_divider_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_divider_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zsys_clk_divider_1_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_divider_1_0_stub.vhdl:5' bound to instance 'clk_divider_1' of component 'zsys_clk_divider_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6032]
+INFO: [Synth 8-638] synthesizing module 'zsys_clk_divider_1_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_divider_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zsys_clk_divider_2_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_divider_2_0_stub.vhdl:5' bound to instance 'clk_divider_2' of component 'zsys_clk_divider_2_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6039]
+INFO: [Synth 8-638] synthesizing module 'zsys_clk_divider_2_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_divider_2_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zsys_i2s_receiver_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_i2s_receiver_0_0_stub.vhdl:5' bound to instance 'i2s_receiver_0' of component 'zsys_i2s_receiver_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6046]
+INFO: [Synth 8-638] synthesizing module 'zsys_i2s_receiver_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_i2s_receiver_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'zsys_i2s_to_pwm_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_i2s_to_pwm_0_0_stub.vhdl:5' bound to instance 'i2s_to_pwm_0' of component 'zsys_i2s_to_pwm_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6079]
+INFO: [Synth 8-638] synthesizing module 'zsys_i2s_to_pwm_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_i2s_to_pwm_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'zsys_i2s_transmitter_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_i2s_transmitter_0_0_stub.vhdl:5' bound to instance 'i2s_transmitter_0' of component 'zsys_i2s_transmitter_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6088]
+INFO: [Synth 8-638] synthesizing module 'zsys_i2s_transmitter_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_i2s_transmitter_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'zsys_xadc_wiz_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'zsys_xadc_wiz_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6121]
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xadc_wiz_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'zsys_xlconstant_0_0' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_0_0/synth/zsys_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'zsys_xlconstant_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6138]
+INFO: [Synth 8-6157] synthesizing module 'zsys_xlconstant_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_0_0/synth/zsys_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 16'b0000000000001100 
+	Parameter CONST_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (11#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zsys_xlconstant_0_0' (12#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_0_0/synth/zsys_xlconstant_0_0.v:57]
+INFO: [Synth 8-3491] module 'zsys_xlconstant_1_0' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_1_0/synth/zsys_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'zsys_xlconstant_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6142]
+INFO: [Synth 8-6157] synthesizing module 'zsys_xlconstant_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_1_0/synth/zsys_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 16'b0000000000000100 
+	Parameter CONST_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (12#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zsys_xlconstant_1_0' (13#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_1_0/synth/zsys_xlconstant_1_0.v:57]
+INFO: [Synth 8-3491] module 'zsys_xlconstant_2_0' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_2_0/synth/zsys_xlconstant_2_0.v:57' bound to instance 'xlconstant_2' of component 'zsys_xlconstant_2_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6146]
+INFO: [Synth 8-6157] synthesizing module 'zsys_xlconstant_2_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_2_0/synth/zsys_xlconstant_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 16'b0000000110000000 
+	Parameter CONST_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (13#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zsys_xlconstant_2_0' (14#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconstant_2_0/synth/zsys_xlconstant_2_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'audio_imp_1P9NOCO' (15#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:5325]
+INFO: [Synth 8-3491] module 'zsys_axi_reg32_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axi_reg32_0_0_stub.vhdl:5' bound to instance 'axi_reg32_0' of component 'zsys_axi_reg32_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:8296]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_reg32_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axi_reg32_0_0_stub.vhdl:34]
+INFO: [Synth 8-638] synthesizing module 'zsys_proc_sys7_0_axi_periph_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:4310]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_17O0P66' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_17O0P66' (16#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_4BKT4' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_4BKT4' (17#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_YF7ZR7' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:957]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_YF7ZR7' (18#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:957]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1QFGOFP' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1068]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1QFGOFP' (19#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1068]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_10UJB05' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1175]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_10UJB05' (20#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1175]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_75ARYB' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1276]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_75ARYB' (21#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1276]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_PGNNMJ' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2131]
+INFO: [Synth 8-3491] module 'zsys_auto_pc_1' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'zsys_auto_pc_1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2314]
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_pc_1' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_1_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_PGNNMJ' (22#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:2131]
+INFO: [Synth 8-3491] module 'zsys_xbar_2' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xbar_2_stub.vhdl:5' bound to instance 'xbar' of component 'zsys_xbar_2' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:5112]
+INFO: [Synth 8-638] synthesizing module 'zsys_xbar_2' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_xbar_2_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'zsys_proc_sys7_0_axi_periph_0' (23#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:4310]
+INFO: [Synth 8-3491] module 'zsys_processing_system7_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'zsys_processing_system7_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:8483]
+INFO: [Synth 8-638] synthesizing module 'zsys_processing_system7_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_processing_system7_0_0_stub.vhdl:231]
+INFO: [Synth 8-638] synthesizing module 'resets_imp_BXH7YA' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1344]
+INFO: [Synth 8-3491] module 'zsys_rst_proc_sys7_0_50M_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_rst_proc_sys7_0_50M_0_stub.vhdl:5' bound to instance 'rst_proc_sys7_0_50M' of component 'zsys_rst_proc_sys7_0_50M_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1372]
+INFO: [Synth 8-638] synthesizing module 'zsys_rst_proc_sys7_0_50M_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_rst_proc_sys7_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'resets_imp_BXH7YA' (24#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1344]
+INFO: [Synth 8-638] synthesizing module 'video_in_imp_1E96PH' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6209]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_interconnect_0_1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:3214]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1CTEOV5' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1433]
+INFO: [Synth 8-3491] module 'zsys_auto_pc_2' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'zsys_auto_pc_2' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1550]
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_pc_2' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_2_stub.vhdl:50]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1CTEOV5' (25#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1433]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axi_interconnect_0_1' (26#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:3214]
+INFO: [Synth 8-3491] module 'zsys_axi_vdma_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'zsys_axi_vdma_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6657]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_vdma_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axi_vdma_0_0_stub.vhdl:55]
+INFO: [Synth 8-3491] module 'zsys_axis_data_fifo_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo_0' of component 'zsys_axis_data_fifo_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6704]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_data_fifo_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_data_fifo_0_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'zsys_axis_data_fifo_3_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_data_fifo_3_0_stub.vhdl:5' bound to instance 'axis_data_fifo_3' of component 'zsys_axis_data_fifo_3_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6720]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_data_fifo_3_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_data_fifo_3_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'zsys_axis_data_fifo_4_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_data_fifo_4_0_stub.vhdl:5' bound to instance 'axis_data_fifo_4' of component 'zsys_axis_data_fifo_4_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6735]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_data_fifo_4_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_data_fifo_4_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'zsys_axis_raw_demosaic_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_raw_demosaic_0_0_stub.vhdl:5' bound to instance 'axis_raw_demosaic_0' of component 'zsys_axis_raw_demosaic_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6751]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_raw_demosaic_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_raw_demosaic_0_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'zsys_axis_raw_unpack_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_raw_unpack_0_0_stub.vhdl:5' bound to instance 'axis_raw_unpack_0' of component 'zsys_axis_raw_unpack_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6767]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_raw_unpack_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_raw_unpack_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'zsys_csi2_d_phy_rx_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_csi2_d_phy_rx_0_0_stub.vhdl:5' bound to instance 'csi2_d_phy_rx_0' of component 'zsys_csi2_d_phy_rx_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6782]
+INFO: [Synth 8-638] synthesizing module 'zsys_csi2_d_phy_rx_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_csi2_d_phy_rx_0_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'zsys_csi_to_axis_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_csi_to_axis_0_0_stub.vhdl:5' bound to instance 'csi_to_axis_0' of component 'zsys_csi_to_axis_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6818]
+INFO: [Synth 8-638] synthesizing module 'zsys_csi_to_axis_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_csi_to_axis_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'zsys_proc_sys_reset_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'zsys_proc_sys_reset_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6845]
+INFO: [Synth 8-638] synthesizing module 'zsys_proc_sys_reset_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'zsys_proc_sys_reset_1_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_proc_sys_reset_1_0_stub.vhdl:5' bound to instance 'proc_sys_reset_1' of component 'zsys_proc_sys_reset_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6858]
+INFO: [Synth 8-638] synthesizing module 'zsys_proc_sys_reset_1_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_proc_sys_reset_1_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'video_in_imp_1E96PH' (27#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6209]
+INFO: [Synth 8-638] synthesizing module 'video_out_imp_VOY96P' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6955]
+INFO: [Synth 8-3491] module 'zsys_Video_IO_2_HDMI_TMDS_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_Video_IO_2_HDMI_TMDS_0_0_stub.vhdl:5' bound to instance 'Video_IO_2_HDMI_TMDS_0' of component 'zsys_Video_IO_2_HDMI_TMDS_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7332]
+INFO: [Synth 8-638] synthesizing module 'zsys_Video_IO_2_HDMI_TMDS_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_Video_IO_2_HDMI_TMDS_0_0_stub.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_mem_intercon_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:4041]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1CXSKC1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1634]
+INFO: [Synth 8-3491] module 'zsys_auto_pc_3' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'zsys_auto_pc_3' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1733]
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_pc_3' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_auto_pc_3_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1CXSKC1' (28#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:1634]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axi_mem_intercon_0' (29#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:4041]
+INFO: [Synth 8-3491] module 'zsys_axi_vdma_0_1' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axi_vdma_0_1_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'zsys_axi_vdma_0_1' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7385]
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_vdma_0_1' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axi_vdma_0_1_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'zsys_axis_fb_conv_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_fb_conv_0_0_stub.vhdl:5' bound to instance 'axis_fb_conv_0' of component 'zsys_axis_fb_conv_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7429]
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_fb_conv_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_axis_fb_conv_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'zsys_clk_wiz_1_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'zsys_clk_wiz_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7444]
+INFO: [Synth 8-638] synthesizing module 'zsys_clk_wiz_1_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_clk_wiz_1_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'zsys_v_axi4s_vid_out_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'zsys_v_axi4s_vid_out_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7470]
+INFO: [Synth 8-638] synthesizing module 'zsys_v_axi4s_vid_out_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_v_axi4s_vid_out_0_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'zsys_v_tc_0_0' declared at 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'zsys_v_tc_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7505]
+INFO: [Synth 8-638] synthesizing module 'zsys_v_tc_0_0' [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/.Xil/Vivado-3088-PowerHouse/realtime/zsys_v_tc_0_0_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 'video_out_imp_VOY96P' (30#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:6955]
+INFO: [Synth 8-3491] module 'zsys_xlconcat_0_0' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconcat_0_0/synth/zsys_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'zsys_xlconcat_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:8846]
+INFO: [Synth 8-6157] synthesizing module 'zsys_xlconcat_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconcat_0_0/synth/zsys_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 6 - type: integer 
+	Parameter NUM_PORTS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (31#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'zsys_xlconcat_0_0' (32#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlconcat_0_0/synth/zsys_xlconcat_0_0.v:60]
+INFO: [Synth 8-3491] module 'zsys_xlslice_0_0' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'zsys_xlslice_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:8856]
+INFO: [Synth 8-6157] synthesizing module 'zsys_xlslice_0_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (33#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'zsys_xlslice_0_0' (34#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'zsys_xlslice_1_0' declared at 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlslice_1_0/synth/zsys_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'zsys_xlslice_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:8861]
+INFO: [Synth 8-6157] synthesizing module 'zsys_xlslice_1_0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlslice_1_0/synth/zsys_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (34#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'zsys_xlslice_1_0' (35#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xlslice_1_0/synth/zsys_xlslice_1_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'zsys' (36#1) [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/synth/zsys.vhd:7593]
+INFO: [Synth 8-256] done synthesizing module 'zsys_wrapper' (37#1) [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/hdl/zsys_wrapper.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1308.664 ; gain = 129.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1308.664 ; gain = 129.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1308.664 ; gain = 129.090
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1308.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0_in_context.xdc] for cell 'zsys_i/audio/audio_formatter_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0_in_context.xdc] for cell 'zsys_i/audio/audio_formatter_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_0/zsys_xbar_0/zsys_xbar_0_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_0/zsys_xbar_0/zsys_xbar_0_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_1/zsys_xbar_1/zsys_xbar_1_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/xbar'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_1/zsys_xbar_1/zsys_xbar_1_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/xbar'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0/zsys_auto_us_0_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0/zsys_auto_us_0_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s00_couplers/auto_us'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_1/zsys_auto_us_1/zsys_auto_us_1_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_1/zsys_auto_us_1/zsys_auto_us_1_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s01_couplers/auto_us'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0/zsys_auto_pc_0_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0/zsys_auto_pc_0_in_context.xdc] for cell 'zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_to_i2s_0_0/zsys_axis_to_i2s_0_0/zsys_axis_to_i2s_0_0_in_context.xdc] for cell 'zsys_i/audio/axis_to_i2s_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_to_i2s_0_0/zsys_axis_to_i2s_0_0/zsys_axis_to_i2s_0_0_in_context.xdc] for cell 'zsys_i/audio/axis_to_i2s_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_0_0/zsys_clk_divider_0_0/zsys_clk_divider_0_0_in_context.xdc] for cell 'zsys_i/audio/clk_divider_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_0_0/zsys_clk_divider_0_0/zsys_clk_divider_0_0_in_context.xdc] for cell 'zsys_i/audio/clk_divider_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_1_0/zsys_clk_divider_1_0/zsys_clk_divider_1_0_in_context.xdc] for cell 'zsys_i/audio/clk_divider_1'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_1_0/zsys_clk_divider_1_0/zsys_clk_divider_1_0_in_context.xdc] for cell 'zsys_i/audio/clk_divider_1'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_2_0/zsys_clk_divider_2_0/zsys_clk_divider_2_0_in_context.xdc] for cell 'zsys_i/audio/clk_divider_2'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_2_0/zsys_clk_divider_2_0/zsys_clk_divider_2_0_in_context.xdc] for cell 'zsys_i/audio/clk_divider_2'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_receiver_0_0/zsys_i2s_receiver_0_0/zsys_i2s_receiver_0_0_in_context.xdc] for cell 'zsys_i/audio/i2s_receiver_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_receiver_0_0/zsys_i2s_receiver_0_0/zsys_i2s_receiver_0_0_in_context.xdc] for cell 'zsys_i/audio/i2s_receiver_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_to_pwm_0_0/zsys_i2s_to_pwm_0_0/zsys_i2s_to_pwm_0_0_in_context.xdc] for cell 'zsys_i/audio/i2s_to_pwm_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_to_pwm_0_0/zsys_i2s_to_pwm_0_0/zsys_i2s_to_pwm_0_0_in_context.xdc] for cell 'zsys_i/audio/i2s_to_pwm_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_transmitter_0_0/zsys_i2s_transmitter_0_0/zsys_i2s_transmitter_0_0_in_context.xdc] for cell 'zsys_i/audio/i2s_transmitter_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_transmitter_0_0/zsys_i2s_transmitter_0_0/zsys_i2s_transmitter_0_0_in_context.xdc] for cell 'zsys_i/audio/i2s_transmitter_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_in_context.xdc] for cell 'zsys_i/audio/xadc_wiz_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_in_context.xdc] for cell 'zsys_i/audio/xadc_wiz_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_reg32_0_0/zsys_axi_reg32_0_0/zsys_axi_reg32_0_0_in_context.xdc] for cell 'zsys_i/axi_reg32_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_reg32_0_0/zsys_axi_reg32_0_0/zsys_axi_reg32_0_0_in_context.xdc] for cell 'zsys_i/axi_reg32_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_2/zsys_xbar_2/zsys_xbar_2_in_context.xdc] for cell 'zsys_i/proc_sys7_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_2/zsys_xbar_2/zsys_xbar_2_in_context.xdc] for cell 'zsys_i/proc_sys7_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_1/zsys_auto_pc_1/zsys_auto_pc_1_in_context.xdc] for cell 'zsys_i/proc_sys7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_1/zsys_auto_pc_1/zsys_auto_pc_1_in_context.xdc] for cell 'zsys_i/proc_sys7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc] for cell 'zsys_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc] for cell 'zsys_i/processing_system7_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0/zsys_proc_sys_reset_1_0_in_context.xdc] for cell 'zsys_i/resets/rst_proc_sys7_0_50M'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0/zsys_proc_sys_reset_1_0_in_context.xdc] for cell 'zsys_i/resets/rst_proc_sys7_0_50M'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_2/zsys_auto_pc_2/zsys_auto_pc_2_in_context.xdc] for cell 'zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_2/zsys_auto_pc_2/zsys_auto_pc_2_in_context.xdc] for cell 'zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0_in_context.xdc] for cell 'zsys_i/video_in/axi_vdma_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0_in_context.xdc] for cell 'zsys_i/video_in/axi_vdma_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0_in_context.xdc] for cell 'zsys_i/video_in/axis_data_fifo_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0_in_context.xdc] for cell 'zsys_i/video_in/axis_data_fifo_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_3_0/zsys_axis_data_fifo_3_0/zsys_axis_data_fifo_3_0_in_context.xdc] for cell 'zsys_i/video_in/axis_data_fifo_3'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_3_0/zsys_axis_data_fifo_3_0/zsys_axis_data_fifo_3_0_in_context.xdc] for cell 'zsys_i/video_in/axis_data_fifo_3'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_4_0/zsys_axis_data_fifo_4_0/zsys_axis_data_fifo_4_0_in_context.xdc] for cell 'zsys_i/video_in/axis_data_fifo_4'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_4_0/zsys_axis_data_fifo_4_0/zsys_axis_data_fifo_4_0_in_context.xdc] for cell 'zsys_i/video_in/axis_data_fifo_4'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0_in_context.xdc] for cell 'zsys_i/video_in/axis_raw_demosaic_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0_in_context.xdc] for cell 'zsys_i/video_in/axis_raw_demosaic_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_raw_unpack_0_0/zsys_axis_raw_unpack_0_0/zsys_axis_raw_unpack_0_0_in_context.xdc] for cell 'zsys_i/video_in/axis_raw_unpack_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_raw_unpack_0_0/zsys_axis_raw_unpack_0_0/zsys_axis_raw_unpack_0_0_in_context.xdc] for cell 'zsys_i/video_in/axis_raw_unpack_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc] for cell 'zsys_i/video_in/csi2_d_phy_rx_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc] for cell 'zsys_i/video_in/csi2_d_phy_rx_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi_to_axis_0_0/zsys_csi_to_axis_0_0/zsys_csi_to_axis_0_0_in_context.xdc] for cell 'zsys_i/video_in/csi_to_axis_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi_to_axis_0_0/zsys_csi_to_axis_0_0/zsys_csi_to_axis_0_0_in_context.xdc] for cell 'zsys_i/video_in/csi_to_axis_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0_in_context.xdc] for cell 'zsys_i/video_in/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0_in_context.xdc] for cell 'zsys_i/video_in/proc_sys_reset_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0_in_context.xdc] for cell 'zsys_i/video_in/proc_sys_reset_1'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0_in_context.xdc] for cell 'zsys_i/video_in/proc_sys_reset_1'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc] for cell 'zsys_i/video_out/Video_IO_2_HDMI_TMDS_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc] for cell 'zsys_i/video_out/Video_IO_2_HDMI_TMDS_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_3/zsys_auto_pc_3/zsys_auto_pc_3_in_context.xdc] for cell 'zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_3/zsys_auto_pc_3/zsys_auto_pc_3_in_context.xdc] for cell 'zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1_in_context.xdc] for cell 'zsys_i/video_out/axi_vdma_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1_in_context.xdc] for cell 'zsys_i/video_out/axi_vdma_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_fb_conv_0_0/zsys_axis_fb_conv_0_0/zsys_axis_fb_conv_0_0_in_context.xdc] for cell 'zsys_i/video_out/axis_fb_conv_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_fb_conv_0_0/zsys_axis_fb_conv_0_0/zsys_axis_fb_conv_0_0_in_context.xdc] for cell 'zsys_i/video_out/axis_fb_conv_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_in_context.xdc] for cell 'zsys_i/video_out/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_in_context.xdc] for cell 'zsys_i/video_out/clk_wiz_1'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'zsys_i/video_out/v_axi4s_vid_out_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'zsys_i/video_out/v_axi4s_vid_out_0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0/zsys_v_tc_0_0_in_context.xdc] for cell 'zsys_i/video_out/v_tc_0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0/zsys_v_tc_0_0_in_context.xdc] for cell 'zsys_i/video_out/v_tc_0'
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/vivado_target.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/vivado_target.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1394.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1394.012 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zsys_i/video_out/clk_wiz_1' at clock pin 's_axi_aclk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0/zsys_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_c_clk_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_c_clk_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_c_clk_p. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_c_clk_p. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_d_n[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_d_n[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_d_n[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_d_n[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_d_p[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_d_p[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_d_p[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_d_p[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_clk_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_clk_n. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_clk_p. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_clk_p. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_data_n[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_data_n[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_data_n[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_data_n[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_data_n[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_data_n[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_data_p[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_data_p[0]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_data_p[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_data_p[1]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_data_p[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_data_p[2]. (constraint file  c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0_in_context.xdc, line 16).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/audio_formatter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_1/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_1/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_1/s01_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axi_interconnect_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/axis_to_i2s_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/clk_divider_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/clk_divider_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/clk_divider_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/i2s_receiver_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/i2s_to_pwm_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/i2s_transmitter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/audio/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/axi_reg32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/proc_sys7_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/proc_sys7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/proc_sys7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/resets/rst_proc_sys7_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axi_vdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axis_data_fifo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axis_data_fifo_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axis_data_fifo_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axis_raw_demosaic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/axis_raw_unpack_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/csi2_d_phy_rx_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/csi_to_axis_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_in/proc_sys_reset_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/axi_mem_intercon. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/axi_vdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/axis_fb_conv_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/v_axi4s_vid_out_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/video_out/v_tc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zsys_i/xlslice_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |zsys_xbar_2                   |         1|
+|2     |zsys_auto_pc_1                |         1|
+|3     |zsys_axi_reg32_0_0            |         1|
+|4     |zsys_processing_system7_0_0   |         1|
+|5     |zsys_xbar_0                   |         1|
+|6     |zsys_xbar_1                   |         1|
+|7     |zsys_auto_pc_0                |         1|
+|8     |zsys_auto_us_0                |         1|
+|9     |zsys_auto_us_1                |         1|
+|10    |zsys_audio_formatter_0_0      |         1|
+|11    |zsys_axis_to_i2s_0_0          |         1|
+|12    |zsys_clk_divider_0_0          |         1|
+|13    |zsys_clk_divider_1_0          |         1|
+|14    |zsys_clk_divider_2_0          |         1|
+|15    |zsys_i2s_receiver_0_0         |         1|
+|16    |zsys_i2s_to_pwm_0_0           |         1|
+|17    |zsys_i2s_transmitter_0_0      |         1|
+|18    |zsys_xadc_wiz_0_0             |         1|
+|19    |zsys_rst_proc_sys7_0_50M_0    |         1|
+|20    |zsys_auto_pc_2                |         1|
+|21    |zsys_axi_vdma_0_0             |         1|
+|22    |zsys_axis_data_fifo_0_0       |         1|
+|23    |zsys_axis_data_fifo_3_0       |         1|
+|24    |zsys_axis_data_fifo_4_0       |         1|
+|25    |zsys_axis_raw_demosaic_0_0    |         1|
+|26    |zsys_axis_raw_unpack_0_0      |         1|
+|27    |zsys_csi2_d_phy_rx_0_0        |         1|
+|28    |zsys_csi_to_axis_0_0          |         1|
+|29    |zsys_proc_sys_reset_0_0       |         1|
+|30    |zsys_proc_sys_reset_1_0       |         1|
+|31    |zsys_auto_pc_3                |         1|
+|32    |zsys_Video_IO_2_HDMI_TMDS_0_0 |         1|
+|33    |zsys_axi_vdma_0_1             |         1|
+|34    |zsys_axis_fb_conv_0_0         |         1|
+|35    |zsys_clk_wiz_1_0              |         1|
+|36    |zsys_v_axi4s_vid_out_0_0      |         1|
+|37    |zsys_v_tc_0_0                 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |zsys_Video_IO_2_HDMI_TMDS_0_0_bbox |     1|
+|2     |zsys_audio_formatter_0_0_bbox      |     1|
+|3     |zsys_auto_pc_0_bbox                |     1|
+|4     |zsys_auto_pc_1_bbox                |     1|
+|5     |zsys_auto_pc_2_bbox                |     1|
+|6     |zsys_auto_pc_3_bbox                |     1|
+|7     |zsys_auto_us_0_bbox                |     1|
+|8     |zsys_auto_us_1_bbox                |     1|
+|9     |zsys_axi_reg32_0_0_bbox            |     1|
+|10    |zsys_axi_vdma_0_0_bbox             |     1|
+|11    |zsys_axi_vdma_0_1_bbox             |     1|
+|12    |zsys_axis_data_fifo_0_0_bbox       |     1|
+|13    |zsys_axis_data_fifo_3_0_bbox       |     1|
+|14    |zsys_axis_data_fifo_4_0_bbox       |     1|
+|15    |zsys_axis_fb_conv_0_0_bbox         |     1|
+|16    |zsys_axis_raw_demosaic_0_0_bbox    |     1|
+|17    |zsys_axis_raw_unpack_0_0_bbox      |     1|
+|18    |zsys_axis_to_i2s_0_0_bbox          |     1|
+|19    |zsys_clk_divider_0_0_bbox          |     1|
+|20    |zsys_clk_divider_1_0_bbox          |     1|
+|21    |zsys_clk_divider_2_0_bbox          |     1|
+|22    |zsys_clk_wiz_1_0_bbox              |     1|
+|23    |zsys_csi2_d_phy_rx_0_0_bbox        |     1|
+|24    |zsys_csi_to_axis_0_0_bbox          |     1|
+|25    |zsys_i2s_receiver_0_0_bbox         |     1|
+|26    |zsys_i2s_to_pwm_0_0_bbox           |     1|
+|27    |zsys_i2s_transmitter_0_0_bbox      |     1|
+|28    |zsys_proc_sys_reset_0_0_bbox       |     1|
+|29    |zsys_proc_sys_reset_1_0_bbox       |     1|
+|30    |zsys_processing_system7_0_0_bbox   |     1|
+|31    |zsys_rst_proc_sys7_0_50M_0_bbox    |     1|
+|32    |zsys_v_axi4s_vid_out_0_0_bbox      |     1|
+|33    |zsys_v_tc_0_0_bbox                 |     1|
+|34    |zsys_xadc_wiz_0_0_bbox             |     1|
+|35    |zsys_xbar_0_bbox                   |     1|
+|36    |zsys_xbar_1_bbox                   |     1|
+|37    |zsys_xbar_2_bbox                   |     1|
+|38    |IBUF                               |     4|
+|39    |IOBUF                              |    24|
+|40    |OBUF                               |     2|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1404.898 ; gain = 129.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1404.898 ; gain = 225.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1404.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1411.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+204 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1411.562 ; gain = 231.988
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/zsys_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file zsys_wrapper_utilization_synth.rpt -pb zsys_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 11:01:11 2024...

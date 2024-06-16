@@ -1,0 +1,9 @@
+/* bare-metal */
+/*auto-generated on 2021/10/07 10:13:53 */
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+  [bootloader]../../../software/7s_512MB/fsbl.elf
+  ../../../hardware/7s_512MB/zynqberrydemo1_7s_512MB.bit
+  ../../../software/7s_512MB/hello_te0726.elf
+}

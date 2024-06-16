@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun 15 11:00:26 2024
+# Process ID: 3088
+# Current directory: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1
+# Command line: vivado.exe -log zsys_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_wrapper.tcl
+# Log file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/zsys_wrapper.vds
+# Journal file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source zsys_wrapper.tcl -notrace

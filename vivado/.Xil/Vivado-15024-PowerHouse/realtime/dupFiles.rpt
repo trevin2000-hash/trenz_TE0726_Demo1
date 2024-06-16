@@ -1,0 +1,4 @@
+Duplicated file found; will not be sent for synthesis: c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v
+Duplicated file found; will not be sent for synthesis: c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v
+Duplicated file found; will not be sent for synthesis: c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v
+CRC performance measure: elapsed=00:00:00.004s;;memory_peak=5118.547MB;;memory_gain=0.000MB

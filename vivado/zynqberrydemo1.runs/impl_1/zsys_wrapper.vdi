@@ -1,0 +1,1382 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun 15 11:01:30 2024
+# Process ID: 11072
+# Current directory: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1
+# Command line: vivado.exe -log zsys_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source zsys_wrapper.tcl -notrace
+# Log file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.vdi
+# Journal file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source zsys_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2020.2/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.cache/ip 
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1179.508 ; gain = 0.000
+Command: link_design -top zsys_wrapper -part xc7z010clg225-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_reg32_0_0/zsys_axi_reg32_0_0.dcp' for cell 'zsys_i/axi_reg32_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.dcp' for cell 'zsys_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0.dcp' for cell 'zsys_i/audio/audio_formatter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_to_i2s_0_0/zsys_axis_to_i2s_0_0.dcp' for cell 'zsys_i/audio/axis_to_i2s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_0_0/zsys_clk_divider_0_0.dcp' for cell 'zsys_i/audio/clk_divider_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_1_0/zsys_clk_divider_1_0.dcp' for cell 'zsys_i/audio/clk_divider_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_divider_2_0/zsys_clk_divider_2_0.dcp' for cell 'zsys_i/audio/clk_divider_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_receiver_0_0/zsys_i2s_receiver_0_0.dcp' for cell 'zsys_i/audio/i2s_receiver_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_to_pwm_0_0/zsys_i2s_to_pwm_0_0.dcp' for cell 'zsys_i/audio/i2s_to_pwm_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_i2s_transmitter_0_0/zsys_i2s_transmitter_0_0.dcp' for cell 'zsys_i/audio/i2s_transmitter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.dcp' for cell 'zsys_i/audio/xadc_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_0/zsys_xbar_0.dcp' for cell 'zsys_i/audio/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_1/zsys_xbar_1.dcp' for cell 'zsys_i/audio/axi_interconnect_1/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0.dcp' for cell 'zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0.dcp' for cell 'zsys_i/audio/axi_interconnect_1/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_1/zsys_auto_us_1.dcp' for cell 'zsys_i/audio/axi_interconnect_1/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xbar_2/zsys_xbar_2.dcp' for cell 'zsys_i/proc_sys7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_1/zsys_auto_pc_1.dcp' for cell 'zsys_i/proc_sys7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0.dcp' for cell 'zsys_i/resets/rst_proc_sys7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.dcp' for cell 'zsys_i/video_in/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0.dcp' for cell 'zsys_i/video_in/axis_data_fifo_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_3_0/zsys_axis_data_fifo_3_0.dcp' for cell 'zsys_i/video_in/axis_data_fifo_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_data_fifo_4_0/zsys_axis_data_fifo_4_0.dcp' for cell 'zsys_i/video_in/axis_data_fifo_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0.dcp' for cell 'zsys_i/video_in/axis_raw_demosaic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_raw_unpack_0_0/zsys_axis_raw_unpack_0_0.dcp' for cell 'zsys_i/video_in/axis_raw_unpack_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0.dcp' for cell 'zsys_i/video_in/csi2_d_phy_rx_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi_to_axis_0_0/zsys_csi_to_axis_0_0.dcp' for cell 'zsys_i/video_in/csi_to_axis_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0.dcp' for cell 'zsys_i/video_in/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0.dcp' for cell 'zsys_i/video_in/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_2/zsys_auto_pc_2.dcp' for cell 'zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0.dcp' for cell 'zsys_i/video_out/Video_IO_2_HDMI_TMDS_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.dcp' for cell 'zsys_i/video_out/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axis_fb_conv_0_0/zsys_axis_fb_conv_0_0.dcp' for cell 'zsys_i/video_out/axis_fb_conv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.dcp' for cell 'zsys_i/video_out/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0.dcp' for cell 'zsys_i/video_out/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0.dcp' for cell 'zsys_i/video_out/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_pc_3/zsys_auto_pc_3.dcp' for cell 'zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.960 . Memory (MB): peak = 1179.508 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1197 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. zsys_i/video_out/clk_wiz_1/inst/CLK_CORE_DRP_I/clk_inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'zsys_i/video_out/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0.xdc] for cell 'zsys_i/audio/audio_formatter_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_audio_formatter_0_0/zsys_audio_formatter_0_0.xdc] for cell 'zsys_i/audio/audio_formatter_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.xdc] for cell 'zsys_i/audio/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.xdc] for cell 'zsys_i/audio/xadc_wiz_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xdc] for cell 'zsys_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.187500 which will be rounded to 0.188 to ensure it is an integer multiple of 1 picosecond [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xdc:21]
+WARNING: [Vivado 12-2489] -input_jitter contains time 1.837500 which will be rounded to 1.838 to ensure it is an integer multiple of 1 picosecond [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xdc:24]
+WARNING: [Vivado 12-2489] -input_jitter contains time 2.437500 which will be rounded to 2.438 to ensure it is an integer multiple of 1 picosecond [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xdc:27]
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xdc] for cell 'zsys_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0_board.xdc] for cell 'zsys_i/resets/rst_proc_sys7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0_board.xdc] for cell 'zsys_i/resets/rst_proc_sys7_0_50M/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0.xdc] for cell 'zsys_i/resets/rst_proc_sys7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_rst_proc_sys7_0_50M_0/zsys_rst_proc_sys7_0_50M_0.xdc] for cell 'zsys_i/resets/rst_proc_sys7_0_50M/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc] for cell 'zsys_i/video_in/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:64]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:84]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-4' is a duplicate and will not be added again. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:112]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:132]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:156]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:160]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:168]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:172]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:176]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:180]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:184]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:188]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc] for cell 'zsys_i/video_in/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/hdl/csi2_d_phy_rx.xdc] for cell 'zsys_i/video_in/csi2_d_phy_rx_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/hdl/csi2_d_phy_rx.xdc] for cell 'zsys_i/video_in/csi2_d_phy_rx_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi_to_axis_0_0/hdl/csi_to_axis.xdc] for cell 'zsys_i/video_in/csi_to_axis_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_csi_to_axis_0_0/hdl/csi_to_axis.xdc] for cell 'zsys_i/video_in/csi_to_axis_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0_board.xdc] for cell 'zsys_i/video_in/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0_board.xdc] for cell 'zsys_i/video_in/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0.xdc] for cell 'zsys_i/video_in/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0.xdc] for cell 'zsys_i/video_in/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0_board.xdc] for cell 'zsys_i/video_in/proc_sys_reset_1/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0_board.xdc] for cell 'zsys_i/video_in/proc_sys_reset_1/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0.xdc] for cell 'zsys_i/video_in/proc_sys_reset_1/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_proc_sys_reset_1_0/zsys_proc_sys_reset_1_0.xdc] for cell 'zsys_i/video_in/proc_sys_reset_1/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc] for cell 'zsys_i/video_out/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:64]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:120]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:124]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:136]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:144]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:148]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:156]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:160]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:168]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:172]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:176]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:180]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:184]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc:220]
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc] for cell 'zsys_i/video_out/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_board.xdc] for cell 'zsys_i/video_out/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_board.xdc] for cell 'zsys_i/video_out/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xdc] for cell 'zsys_i/video_out/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1848.363 ; gain = 580.762
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xdc] for cell 'zsys_i/video_out/clk_wiz_1/inst'
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/vivado_target.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/vivado_target.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_bitgen_common.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_bitgen_common.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_common.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_common.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_csi.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_csi.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_hdmi.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_hdmi.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_te0726.xdc]
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_te0726.xdc]
+Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_timing.xdc]
+WARNING: [Vivado 12-180] No cells matched 'zsys_i/audio/axi_i2s_adi_0/U0/ctrl/tx_sync/out_data_reg[4]'. [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_timing.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_timing.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'zsys_i/audio/axi_i2s_adi_0/U0/ctrl/SDATA_O_reg[0]'. [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_timing.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_timing.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/constraints/_i_timing.xdc]
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0_clocks.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0_clocks.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_1/zsys_auto_us_1_clocks.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_auto_us_1/zsys_auto_us_1_clocks.xdc] for cell 'zsys_i/audio/axi_interconnect_1/s01_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0_clocks.xdc] for cell 'zsys_i/video_in/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0_clocks.xdc] for cell 'zsys_i/video_in/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1_clocks.xdc] for cell 'zsys_i/video_out/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1_clocks.xdc] for cell 'zsys_i/video_out/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'zsys_i/video_out/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'zsys_i/video_out/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0_clocks.xdc] for cell 'zsys_i/video_out/v_tc_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.gen/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0_clocks.xdc] for cell 'zsys_i/video_out/v_tc_0/U0'
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/video_in/axis_data_fifo_4/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/video_in/axis_data_fifo_4/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/video_in/axis_data_fifo_4/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/video_in/axis_data_fifo_4/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/reset_s2mm/ASYNC_CLOCKS.CDC_SOFT_RESET_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/reset_s2mm/ASYNC_CLOCKS.CDC_SOFT_RESET_AXI_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/reset_s2mm/ASYNC_CLOCKS.CDC_HALT_COMPLETE_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_SLAVE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_CS_CLEAR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_DECODE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_TIMEOUT_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_START_DMA_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/reset_mm2s/ASYNC_CLOCKS.CDC_SOFT_RESET_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/reset_mm2s/ASYNC_CLOCKS.CDC_SOFT_RESET_AXI_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/reset_mm2s/ASYNC_CLOCKS.CDC_HALT_COMPLETE_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/ASYNC_CLOCKS.CDC_SLAVE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/ASYNC_CLOCKS.CDC_DECODE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/ASYNC_CLOCKS.CDC_START_DMA_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_VALIDITY_AXISCLK_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: zsys_i/audio/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Vivado_2020.2/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-1715] 8 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1848.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 24 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+51 Infos, 92 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1848.363 ; gain = 668.855
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1848.363 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2209ad9b8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1848.363 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 17 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ce685db1
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2031.570 ; gain = 1.176
+INFO: [Opt 31-389] Phase Retarget created 437 cells and removed 1035 cells
+INFO: [Opt 31-1021] In phase Retarget, 280 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 9 load pin(s).
+Phase 2 Constant propagation | Checksum: d9ede849
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2031.570 ; gain = 1.176
+INFO: [Opt 31-389] Phase Constant propagation created 264 cells and removed 1252 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 471 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12892b1ae
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.570 ; gain = 1.176
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2366 cells
+INFO: [Opt 31-1021] In phase Sweep, 265 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG zsys_i/audio/clk_divider_1/U0/clk_out_BUFG_inst to drive 491 load(s) on clock net zsys_i/audio/clk_divider_1/U0/clk_out_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: a1f67b30
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.570 ; gain = 1.176
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: a1f67b30
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.570 ; gain = 1.176
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 14a41a718
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.570 ; gain = 1.176
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 66 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             437  |            1035  |                                            280  |
+|  Constant propagation         |             264  |            1252  |                                            471  |
+|  Sweep                        |               0  |            2366  |                                            265  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                             66  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2031.570 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 143959c25
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2031.570 ; gain = 1.176
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 30 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 11 newly gated: 1 Total Ports: 60
+Ending PowerOpt Patch Enables Task | Checksum: 1639503a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1639503a6
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2401.137 ; gain = 369.566
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1639503a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 20dd1922d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+79 Infos, 92 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 2401.137 ; gain = 552.773
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file zsys_wrapper_drc_opted.rpt -pb zsys_wrapper_drc_opted.pb -rpx zsys_wrapper_drc_opted.rpx
+Command: report_drc -file zsys_wrapper_drc_opted.rpt -pb zsys_wrapper_drc_opted.pb -rpx zsys_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENARDEN (net: zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13678579d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: faef378e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: dcaae1a2
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: dcaae1a2
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: dcaae1a2
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 126a4a811
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 184879733
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 37 LUTNM shape to break, 757 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 26, two critical 11, total 37, new lutff created 2
+INFO: [Physopt 32-775] End 1 Pass. Optimized 300 nets or cells. Created 37 new cells, deleted 263 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-527] Pass 1: Identified 2 candidate cells for BRAM register optimization
+INFO: [Physopt 32-665] Processed cell zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg. 32 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zsys_i/audio/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg. 27 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 59 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           37  |            263  |                   300  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |           59  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           96  |            263  |                   302  |           0  |           8  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 128fd037d
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 1a09eda95
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:25 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1a09eda95
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:25 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18b3ce5f2
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:26 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1282cd96e
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 152a957b6
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1abb6638e
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1b7fd6afa
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:31 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 13fbbf933
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:39 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: b7f0312b
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 9029f3b3
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 3f0a6768
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 3f0a6768
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16fc162d5
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.332 | TNS=-420.265 |
+Phase 1 Physical Synthesis Initialization | Checksum: 238b9aec5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Place 46-33] Processed net zsys_i/video_out/clk_wiz_1/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net zsys_i/video_out/v_tc_0/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1d9405f18
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16fc162d5
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:52 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.194. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 29990f7d0
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 29990f7d0
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 29990f7d0
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 29990f7d0
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 254017945
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Ending Placer Task | Checksum: 17843588d
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+123 Infos, 93 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:17 ; elapsed = 00:01:51 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file zsys_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file zsys_wrapper_utilization_placed.rpt -pb zsys_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file zsys_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.194 | TNS=-181.470 |
+Phase 1 Physical Synthesis Initialization | Checksum: 15855f4e5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.194 | TNS=-181.470 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 15855f4e5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.194 | TNS=-181.470 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[10].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[10]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.194 | TNS=-181.227 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[11].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[11]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.194 | TNS=-180.984 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[8].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[8]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.194 | TNS=-180.741 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[9].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[9]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.191 | TNS=-180.498 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[16].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[16]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.191 | TNS=-180.369 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[17].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[17]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.191 | TNS=-180.240 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[18].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[18]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.191 | TNS=-180.111 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[19].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[19]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.190 | TNS=-179.982 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[0].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[0]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.190 | TNS=-179.618 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[1].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[1]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.190 | TNS=-179.254 |
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/clk_out.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_reg
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/clk_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_i_2
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in. Optimizations did not improve timing on the net.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-81] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0]. Replicated 1 times.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-735] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-169.490 |
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-662] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0].  Did not re-place instance zsys_i/resets/rst_proc_sys7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-572] Net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-702] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/no_of_valid_channels_reg[3]_0[1].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/no_of_valid_channels_reg[1]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/no_of_valid_channels_reg[3]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/run_stop_i_3_n_0.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/run_stop_i_3
+INFO: [Physopt 32-242] Processed net zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/run_stop_i_3_n_0. Rewired (signal push) zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/buffer_address[31]_i_2_n_0 to 2 loads. Replicated 0 times.
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_registers_1/run_stop_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.899 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[4].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[6]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.731 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[5].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[7]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.563 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[6].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[8]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.395 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[7].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[9]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.227 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[8].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[10]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.211 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[9].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[11]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.195 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[10].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[12]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.179 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[11].  Re-placed instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[13]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-160.163 |
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[14]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/CAPTURE_MM2S.period_size_reg[15][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.period_size_reg[15]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-159.848 |
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.period_size_reg[15]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read1_carry_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read1_carry_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/bytes_reg[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/m_axi_mm2s_rready_INST_0_i_4
+INFO: [Physopt 32-81] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-162.087 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[2].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[2]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.186 | TNS=-161.930 |
+INFO: [Physopt 32-663] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[3].  Re-placed instance zsys_i/audio/clk_divider_1/U0/cnt_reg[3]
+INFO: [Physopt 32-735] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.175 | TNS=-161.773 |
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[4].  Did not re-place instance zsys_i/audio/clk_divider_1/U0/cnt_reg[4]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/cnt0.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/cnt[0]_i_1
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/cnt0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0].  Did not re-place instance zsys_i/resets/rst_proc_sys7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N
+INFO: [Physopt 32-702] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/clk_out.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_reg
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/clk_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_i_2
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[14]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/CAPTURE_MM2S.period_size_reg[15][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.period_size_reg[15]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/bytes_reg[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/m_axi_mm2s_rready_INST_0_i_4_replica
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/periods[7]_i_1__0
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.175 | TNS=-161.773 |
+Phase 3 Critical Path Optimization | Checksum: 15855f4e5
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.175 | TNS=-161.773 |
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[4].  Did not re-place instance zsys_i/audio/clk_divider_1/U0/cnt_reg[4]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net zsys_i/audio/clk_divider_1/U0/cnt0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/cnt0.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/cnt[0]_i_1
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/cnt0. Optimizations did not improve timing on the net.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-662] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0].  Did not re-place instance zsys_i/resets/rst_proc_sys7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-572] Net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-702] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/clk_out.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_reg
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/clk_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_i_2
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[14]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/CAPTURE_MM2S.period_size_reg[15][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.period_size_reg[15]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read1_carry_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read1_carry_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/bytes_reg[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/m_axi_mm2s_rready_INST_0_i_4_replica
+INFO: [Physopt 32-572] Net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0] was not replicated.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/periods[7]_i_1__0
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]
+INFO: [Physopt 32-81] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.175 | TNS=-157.887 |
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]_repN.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_replica
+INFO: [Physopt 32-572] Net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[4].  Did not re-place instance zsys_i/audio/clk_divider_1/U0/cnt_reg[4]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/cnt_reg[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/cnt0.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/cnt[0]_i_1
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/cnt0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0].  Did not re-place instance zsys_i/resets/rst_proc_sys7_0_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N
+INFO: [Physopt 32-702] Processed net zsys_i/resets/rst_proc_sys7_0_50M/U0/peripheral_aresetn[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/clk_out.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_reg
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/clk_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in.  Did not re-place instance zsys_i/audio/clk_divider_1/U0/clock_i_2
+INFO: [Physopt 32-702] Processed net zsys_i/audio/clk_divider_1/U0/p_0_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read_reg[14]
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/src_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/CAPTURE_MM2S.period_size_reg[15][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.period_size_reg[15]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/command_generator_1/transfer_count_read2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/bytes_reg[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/m_axi_mm2s_rready_INST_0_i_4_replica
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_1_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0].  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/periods[7]_i_1__0
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/SR[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]_repN.  Did not re-place instance zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_replica
+INFO: [Physopt 32-702] Processed net zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CAPTURE_MM2S.pcm_data_width_reg[2]_0[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.175 | TNS=-157.887 |
+Phase 4 Critical Path Optimization | Checksum: 15855f4e5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.175 | TNS=-157.887 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.019  |         23.582  |            5  |              0  |                    25  |           0  |           2  |  00:00:04  |
+|  Total          |          0.019  |         23.582  |            5  |              0  |                    25  |           0  |           3  |  00:00:04  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 22b266190
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+311 Infos, 101 Warnings, 2 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: a6ee0338 ConstDB: 0 ShapeSum: e7a332da RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: e3fd549a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 4f020538 NumContArr: 94fb4f62 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: e3fd549a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: e3fd549a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: e3fd549a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2401.137 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c75e713e
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.036 | TNS=-111.744| WHS=-0.942 | THS=-440.738|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1b5dba5da
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.036 | TNS=-100.969| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 21d281d2f
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 1bd3cca90
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2401.137 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00633446 %
+  Global Horizontal Routing Utilization  = 0.0078125 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 26150
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 26150
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 1
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1bd3cca90
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2401.137 ; gain = 0.000
+Phase 3 Initial Routing | Checksum: eef01b98
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2401.137 ; gain = 0.000
+INFO: [Route 35-580] Design has 64 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_1 |                                                               zsys_i/audio/clk_divider_1/U0/cnt_reg[14]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                               zsys_i/audio/clk_divider_1/U0/cnt_reg[16]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                               zsys_i/audio/clk_divider_1/U0/cnt_reg[15]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                               zsys_i/audio/clk_divider_1/U0/cnt_reg[13]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                               zsys_i/audio/clk_divider_1/U0/cnt_reg[12]/R|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3371
+ Number of Nodes with overlaps = 776
+ Number of Nodes with overlaps = 313
+ Number of Nodes with overlaps = 116
+ Number of Nodes with overlaps = 73
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.100 | TNS=-366.385| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1c92af4c7
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.100 | TNS=-368.707| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 136f5bdc4
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 2401.191 ; gain = 0.055
+Phase 4 Rip-up And Reroute | Checksum: 136f5bdc4
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1796ed01e
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2401.191 ; gain = 0.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.100 | TNS=-342.757| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 191e7bf40
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 191e7bf40
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2401.191 ; gain = 0.055
+Phase 5 Delay and Skew Optimization | Checksum: 191e7bf40
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 129fb1b20
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:57 . Memory (MB): peak = 2401.191 ; gain = 0.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.100 | TNS=-336.574| WHS=0.020  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 16555612f
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:57 . Memory (MB): peak = 2401.191 ; gain = 0.055
+Phase 6 Post Hold Fix | Checksum: 16555612f
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:57 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 15.4803 %
+  Global Horizontal Routing Utilization  = 20.4327 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 57.6577%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 63.964%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 16d092bf6
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:57 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 16d092bf6
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:57 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1b519fa2c
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:59 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.100 | TNS=-336.574| WHS=0.020  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1b519fa2c
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:59 . Memory (MB): peak = 2401.191 ; gain = 0.055
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:59 . Memory (MB): peak = 2401.191 ; gain = 0.055
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+331 Infos, 102 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:05 . Memory (MB): peak = 2401.191 ; gain = 0.055
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2401.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2401.191 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file zsys_wrapper_drc_routed.rpt -pb zsys_wrapper_drc_routed.pb -rpx zsys_wrapper_drc_routed.rpx
+Command: report_drc -file zsys_wrapper_drc_routed.rpt -pb zsys_wrapper_drc_routed.pb -rpx zsys_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2462.113 ; gain = 60.922
+INFO: [runtcl-4] Executing : report_methodology -file zsys_wrapper_methodology_drc_routed.rpt -pb zsys_wrapper_methodology_drc_routed.pb -rpx zsys_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file zsys_wrapper_methodology_drc_routed.rpt -pb zsys_wrapper_methodology_drc_routed.pb -rpx zsys_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2462.988 ; gain = 0.875
+INFO: [runtcl-4] Executing : report_power -file zsys_wrapper_power_routed.rpt -pb zsys_wrapper_power_summary_routed.pb -rpx zsys_wrapper_power_routed.rpx
+Command: report_power -file zsys_wrapper_power_routed.rpt -pb zsys_wrapper_power_summary_routed.pb -rpx zsys_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+343 Infos, 103 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2486.508 ; gain = 23.520
+INFO: [runtcl-4] Executing : report_route_status -file zsys_wrapper_route_status.rpt -pb zsys_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file zsys_wrapper_timing_summary_routed.rpt -pb zsys_wrapper_timing_summary_routed.pb -rpx zsys_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file zsys_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file zsys_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file zsys_wrapper_bus_skew_routed.rpt -pb zsys_wrapper_bus_skew_routed.pb -rpx zsys_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 11:06:39 2024...
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun 15 11:06:54 2024
+# Process ID: 11228
+# Current directory: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1
+# Command line: vivado.exe -log zsys_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source zsys_wrapper.tcl -notrace
+# Log file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.vdi
+# Journal file: C:/Users/tdv20/Documents/SoC_Project/ZynqBerry_TE0726-03/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source zsys_wrapper.tcl -notrace
+Command: open_checkpoint zsys_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1163.148 ; gain = 0.000
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for trenz.biz:te0726_10_1c:part0:3.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for trenz.biz:te0726_10_1c:part0:3.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1163.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'zsys_i/video_out/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1752.164 ; gain = 16.324
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1752.164 ; gain = 16.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1752.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 24 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRLC32E => SRL16E: 3 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1753.809 ; gain = 590.660
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_out/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_out/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_out/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_in/axis_data_fifo_4/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_in/axis_data_fifo_4>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_in/axis_data_fifo_3/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_in/axis_data_fifo_3>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_in/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_in/axis_data_fifo_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block zsys_i/video_in/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zsys_i/video_in/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_in/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_in/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/video_in/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/video_in/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/audio/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/audio/i2s_transmitter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/audio/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/audio/i2s_receiver_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/audio/audio_formatter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zsys_i/audio/audio_formatter_0/U0/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <zsys_i/audio/audio_formatter_0/U0/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zsys_i/audio/audio_formatter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force zsys_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2020.2/Vivado/2020.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[0].serdes_ddr_inst/OSERDESE2_m_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[0].serdes_ddr_inst/OSERDESE2_s_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[1].serdes_ddr_inst/OSERDESE2_m_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[1].serdes_ddr_inst/OSERDESE2_s_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[2].serdes_ddr_inst/OSERDESE2_m_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[2].serdes_ddr_inst/OSERDESE2_s_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[3].serdes_ddr_inst/OSERDESE2_m_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for zsys_i/video_out/Video_IO_2_HDMI_TMDS_0/U0/HDMI_ddr_lines_gen[3].serdes_ddr_inst/OSERDESE2_s_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENARDEN (net: zsys_i/video_out/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 66 net(s) have no routable loads. The problem bus(es) and/or net(s) are zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zsys_i/audio/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, zsys_i/video_out/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, zsys_i/video_in/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 42 listed).
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (zsys_i/video_in/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (zsys_i/video_in/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 10 Warnings, 2 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 8532640 bits.
+Writing bitstream ./zsys_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 11 Warnings, 2 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 2371.887 ; gain = 597.246
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 11:07:55 2024...
